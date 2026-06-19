@@ -1,1 +1,123 @@
+/* GLOBAL SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: 'Inter', sans-serif; /* Modern Distinction-level font */
+    background-color: #f8fafc;
+    color: #0f172a;
+    line-height: 1.6;
+}
+
+/* HEADER & NAV */
+.main-header {
+    background-color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo-container h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #475569;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-transform: lowercase;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover, .main-nav a.active {
+    color: #e11d48; /* A sophisticated red accent */
+    text-decoration: underline;
+}
+
+/* HERO SECTION (Union Jack Background) */
+.hero {
+    /* Change 'union-jack.jpg' to whatever you name your image! */
+    background: url('union-jack.jpg') center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    background-color: rgba(225, 29, 72, 0.85); /* Red transparent bar */
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.hero-overlay h2 {
+    color: white;
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+/* CONTENT GRID (The 3 Boxes) */
+.content-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+/* MODERN INFO CARDS (Replacing thick black borders) */
+.info-card {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08); /* Soft modern shadow */
+    border-top: 5px solid #e11d48; /* Red accent top */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.info-card h3 {
+    color: #e11d48;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.values-list {
+    list-style-type: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.values-list li {
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+.main-footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+    color: #64748b;
+    font-size: 0.9rem;
+}
