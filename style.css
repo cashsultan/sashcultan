@@ -50,7 +50,7 @@ body {
 /* HERO SECTION (Union Jack Background) */
 .hero {
     /* Change 'union-jack.jpg' to whatever you name your image! */
-    background: url('union-jack.jpg') center/cover no-repeat;
+    background: url('union-jack.jpg.jpg') center/cover no-repeat;
     height: 400px;
     display: flex;
     align-items: center;
